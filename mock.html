@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- for even -->
+    <button id="btn">Click me</button>
+<!--     
+for odd -->
+    <button id="btn2">for odd</button>
+
+
+    <!-- for prime -->
+<button id="btn3">for prime</button>
+    <script>
+        var btn=document.getElementById("btn");
+        btn.addEventListener("click",function()
+        {
+        let n=100;
+        for(let i=2;i<=n;i++)
+        {
+            if(i%2==0)
+            {
+                document.write(i+" <br/>")
+            }
+         
+        }
+    })
+
+    var btn2=document.getElementById("btn2");
+    btn2.addEventListener("click",function()
+    {
+        let n=100;
+        for(let i=2;i<=n;i++)
+        {
+            if(i%2!=0)
+            {
+                document.write(i+" <br/>")
+            }
+         
+        }
+    })
+var btn3=document.getElementById("btn3");
+btn3.addEventListener("click",function()
+{
+   /* let n=100;
+    let isPrime=true;
+
+    for(let i=2;i<n;i++)
+    {
+       if(n%i==0)
+       {
+           isPrime=false;
+           break;
+       }
+    }
+if(isPrime)
+{
+   // console.log(n+" is a prime");
+   document.write(n);
+}
+else
+{
+    console.log("not a prime");
+}*/
+function isPrime(n){
+    if(n==1 || n==0) return false;
+    for(let i=2;i<n;i++){
+        if(n%i==0) return false;
+    }
+    return true;
+}
+let N=100;
+for(let i=1;i<N;i++){
+    if(isPrime(i)){
+        document.write(i+"<br/>")
+    }
+}
+})
+
+    </script>
+</body>
+</html>
