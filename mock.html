@@ -5,10 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        #btn{
+            font-size: 20px;
+            font-family: lato;
+            background-color:aqua;
+            color: #000;
+            border: 1px solid red;
+        }
+        #btn2{
+            font-size: 20px;
+            font-family: lato;
+            background-color:aqua;
+            color: #000;
+            border: 1px solid red;
+        }
+        #btn3{
+            font-size: 20px;
+            font-family: lato;
+            background-color:aqua;
+            color: #000;
+            border: 1px solid red;
+        }
+    </style>
 </head>
 <body>
     <!-- for even -->
-    <button id="btn">Click me</button>
+    <button id="btn">for even</button>
 <!--     
 for odd -->
     <button id="btn2">for odd</button>
@@ -25,7 +48,7 @@ for odd -->
         {
             if(i%2==0)
             {
-                document.write(i+" <br/>")
+                document.write(i+" ")
             }
          
         }
@@ -39,7 +62,7 @@ for odd -->
         {
             if(i%2!=0)
             {
-                document.write(i+" <br/>")
+                document.write(i+" ")
             }
          
         }
@@ -47,26 +70,6 @@ for odd -->
 var btn3=document.getElementById("btn3");
 btn3.addEventListener("click",function()
 {
-   /* let n=100;
-    let isPrime=true;
-
-    for(let i=2;i<n;i++)
-    {
-       if(n%i==0)
-       {
-           isPrime=false;
-           break;
-       }
-    }
-if(isPrime)
-{
-   // console.log(n+" is a prime");
-   document.write(n);
-}
-else
-{
-    console.log("not a prime");
-}*/
 function isPrime(n){
     if(n==1 || n==0) return false;
     for(let i=2;i<n;i++){
@@ -77,7 +80,7 @@ function isPrime(n){
 let N=100;
 for(let i=1;i<N;i++){
     if(isPrime(i)){
-        document.write(i+"<br/>")
+        document.write(i+" ")
     }
 }
 })

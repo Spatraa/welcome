@@ -7,7 +7,7 @@
     <title>Arrays and Object</title>
 </head>
 <body>
-    <div class="container">sankar</div>
+    <p id="demo"></p>
     <script>
        /*let employee={
             name:"sankar",
@@ -41,14 +41,20 @@
        }
        let allqualities={...quality,...quality1,workingtime:8};
        console.log(allqualities);*/
-       let arr=[];
+       /*let arr=[];
        arr.push()
       // console.log(arr);
        //console.log(Array.prototype);
        Array.prototype.mypush="ghjxfsghds";
        console.log(arr.mypush);
        let arr2=[1,5,8,45];
-       console.log(arr2.mypush);
+       console.log(arr2.mypush);*/
+
+    const arr=[4,16,25];
+    document.getElementsByClassName('demo').innerHTML=arr.filter(check);
+    function check(num){
+        return num>=18;
+        }
     </script>
 </body>
 </html>
