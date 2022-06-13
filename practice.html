@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: yellow;
+    }
+    .container ul{
+        display: flex;
+        justify-content: center;
+    }
+    .container ul li{
+        margin: 25px;
+        list-style: none;
+    }
+    .container ul li a{
+        text-decoration: none;
+    }
+    #form .sankar{
+        border-radius: 15px;
+        /*background: #f9f9ff;*/
+        display: flex;
+        flex-direction: column;
+        padding: 40px;
+        align-items: center;
+    }
+    #form .sankar input{
+        width: 200px;
+        margin: 10px;
+        background-color: aquamarine;
+        line-height: 30px;
+        border-radius: 20px;
+    }
+    #footer{
+        line-height: 100px;
+        text-align: center;
+    }
+    #footer .futer a{
+        text-decoration: none;
+        text-align: none;
+        margin: 30px;
+    }
+</style>
+<body>
+    <div class="container">
+        <ul>
+             <li><a href="#">Home</a></li>
+             <li><a href="#">About Us</a></li>
+             <li><a href="#">Blog</a></li>
+        </ul>
+    </div>
+    <section id="form">
+        <div class="sankar">
+            <input type="text" id="text" placeholder="enter the name">
+            <span id="error"></span>
+            <input type="mail" id="mail" placeholder="enter mail">
+            <spam id="error1"></spam>
+            <input  type="number" id="number" placeholder="enter number">
+            <span id="error2"></span>
+            <button type="button" id="btn" onclick="abc()">Submit</button>
+        </div>
+    </section>
+    <section id="footer">
+        <footer class="futer">
+            <a href="#">careers</a>
+            <a href="#">blog</a>
+            <a href="#">Team</a>
+        </footer>
+    </section>
+    <script>
+       function abc(){
+           let text=document.getElementById('text').value;
+           let email=document.getElementById('mail').value;
+           let number=document.getElementById('number').value;
+           document.getElementById('error').innerHTML=" ";
+           if(text==""){
+               document.getElementById('error').innerHTML="enter the name";
+           }
+           document.getElementById('error1').innerHTML=" ";
+           if(email==""){
+               document.getElementById('error1').innerHTML="enter the mail";
+           }
+           document.getElementById('error2').innerHTML=" ";
+           if(number==""){
+               document.getElementById('error2').innerHTML="enter the number";
+           }
+           }
+    </script>
+</body>
+</html>
